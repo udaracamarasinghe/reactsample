@@ -1,0 +1,48 @@
+{
+    "orders": [
+        {
+            "id": 1,
+            "orderId": "OR000001",
+            "customerId": "cx0002",
+            "status": "Ready",
+            "items": [
+                {
+                    "itemId": "I0001",
+                    "itemName": "IPhone8",
+                    "qty": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "orderId": "OR020002",
+            "customerId": "cx0003",
+            "status": "Packing",
+            "items": [
+                {
+                    "itemId": "I0010",
+                    "itemName": "Huwawi8",
+                    "qty": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "orderId": "OR000003",
+            "customerId": "cx0003",
+            "status": "Ready",
+            "items": [
+                {
+                    "itemId": "I0009",
+                    "itemName": "Samsung7",
+                    "qty": 0
+                },
+                {
+                    "itemId": "I0010",
+                    "itemName": "Huwawi8",
+                    "qty": 0
+                }
+            ]
+        }
+    ]
+}

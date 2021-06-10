@@ -7,7 +7,7 @@ const OrderList = ({ orders, title, handleDelete, changeQty }) => {
         <div className="order-list">
             <h2>{title}</h2>
 
-            {orders.map((order) =>
+            {orders && orders.map((order) =>
                 <div className="order-preview" key={order.id}>
                     <Link to={`/order/${order.id}`}>
                         <h2>Order Id : {order.orderId}</h2>

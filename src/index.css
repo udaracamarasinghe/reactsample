@@ -43,7 +43,9 @@
 .order-preview {
   padding: 10px 16px;
   margin: 20px 0;
+  background-color: snow;
   border-bottom: 1px solid whitesmoke;
+  border: 1px solid whitesmoke;;
 }
 
 .order-preview:hover {
@@ -58,6 +60,16 @@
 
 .order-preview a {
   text-decoration: none;
+}
+
+.order-preview button {
+  background: cornsilk;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 5px 5px;
+  border: 0;
+  margin-top: 5px;
+  border: 1px solid darkgray;
 }
 
 .order-details {
@@ -84,10 +96,7 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
-}
-
-.create-order:hover {
-  
+  margin: auto;
 }
 
 .create-order h2 {
@@ -110,13 +119,14 @@
   width: 60%;
   box-sizing: border-box;
   padding: 6px 10px;
-  border: 1px solid wheat;
+  border: 1px solid firebrick;
 }
 
 .create-order button {
   background: seashell;
   cursor: pointer;
   border-radius: 7px;
-  padding: 10px;
+  padding: 10px 10px;
   border: 0;
+  margin-top: 5px;
 }

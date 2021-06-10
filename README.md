@@ -1,14 +1,14 @@
 # Guid to run this App
 
-Install Json-server if you have not installed already. Make sure port 8000
+Install Json-server if you have not installed already. 
 
 ### `npm install -g json-server`
 
-Run Json-server and Make sure port 8000 avilable
+Run Json-server and Make sure port 8000 avilable.
 
 ### `npx json-server --watch .\data\db.json --port 8000`
 
-Then install React
+Then install React.
 
 ### `npm install`
 

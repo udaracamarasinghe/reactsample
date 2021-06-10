@@ -1,22 +1,46 @@
 
 import { Link } from 'react-router-dom';
+import * as ReactBootStrap from "react-bootstrap";
+
+
+const handleDelete = (id) => {
+    fetch('http://localhost:8000/orders/' + id, {
+        method: 'DELETE'
+    }).then(() => {
+    });
+}
+
+const renderOrder = (order, index) => {
+    return (
+        <tr>
+
+            <td>{order.orderId}</td>
+            <td>{order.customerId}</td>
+            <td><Link to={`/order/${order.id}`}><button>Details</button></Link></td>
+            <td><Link to={`/edit/${order.id}`}><button>Edit</button></Link></td>
+            <td><button onClick={() => handleDelete(order.id)}>Delete</button></td>
+        </tr >
+    );
+}
 
 const OrderList = ({ orders, title, handleDelete, changeQty }) => {
 
     return (
         <div className="order-list">
-            <h2>{title}</h2>
+            <h3>{title}</h3>
 
-            {orders && orders.map((order) =>
-                <div className="order-preview" key={order.id}>
-                    <Link to={`/order/${order.id}`}>
-                        <h2>Order Id : {order.orderId}</h2>
-                        <p>Customer Id : {order.customerId}</p>
-                        
-                        <button onClick={() => handleDelete(order.orderId)}>Delete</button>
-                    </Link>
-                </div>
-            )}
+            <ReactBootStrap.Table>
+                <thead>
+                    <th>Order Id</th>
+                    <th>Customer Id</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    {orders && orders.map(renderOrder)}
+                </tbody>
+            </ReactBootStrap.Table>
         </div>
     );
 }

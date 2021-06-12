@@ -1,0 +1,19 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "itemId": "I1111",
+        "itemName": "Huwawi8"
+      },
+      {
+        "id": 2,
+        "itemId": "I1112",
+        "itemName": "IPhone8"
+      },
+      {
+        "id": 3,
+        "itemId": "I1113",
+        "itemName": "Samsung7"
+      }
+    ]
+  }

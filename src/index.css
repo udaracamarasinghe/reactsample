@@ -12,7 +12,7 @@
   max-width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
-  background-color: gold;
+  background-image: linear-gradient(rgba(255, 251, 0, 0.74), rgb(241, 197, 0));
 }
 
 .navbar h1 {
@@ -75,16 +75,14 @@
 .order-list {
   padding: 20px;;
   border: 1px solid tan;
+  box-shadow: 1px 2px 2px thistle;
 }
 
 .order-details {
   padding: 5px 8px;
   margin: 20px 0;
   border: 1px solid tan;
-}
-
-.order-details:hover {
-  box-shadow: 1px 3px 5px thistle;
+  box-shadow: 1px 2px 2px thistle;
 }
 
 .order-details h2 {
@@ -105,6 +103,7 @@
   background-color: white;
   padding: 10px;
   border: 1px solid tan;
+  box-shadow: 1px 2px 2px thistle;
 }
 
 .create-order h2 {
@@ -154,6 +153,11 @@
 
 .content table button {
   padding: 2px 10px;
+}
+
+.content tr:hover {
+  box-shadow: 2px 2px 2px thistle;
+  background: white;
 }
 
 .content  button {

@@ -6,7 +6,7 @@ import useFetch from "./useFetch";
 
 const CreateNUpdate = () => {
     const { id } = useParams();   
-    const { data: origOrder, isLoading: isOrderFetchLoading, error: orderFetchError } = useFetch('http://localhost:8000/orders/' + id);
+    const { data: origOrder, isLoading: isOrderFetchLoading, error: orderFetchError } = useFetch('http://localhost:8000/orders/', id);
 
     return (
         <div>

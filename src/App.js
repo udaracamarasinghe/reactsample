@@ -6,6 +6,7 @@ import OrderDetails from './OrderDetails';
 import NotFound from './NotFound';
 import BreadcrumbBar from './BreadcrumbBar';
 import CreateNUpdate from './CreateNUpdate';
+import Footer from './Footer';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
 
